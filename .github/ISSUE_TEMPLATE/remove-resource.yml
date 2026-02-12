@@ -1,0 +1,34 @@
+name: Request removal
+description: Suggest removing a resource that no longer meets inclusion criteria.
+title: "Remove: <name of resource>"
+labels: ["remove-resource"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Resource name
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Link in the list
+    validations:
+      required: true
+  - type: dropdown
+    id: reason
+    attributes:
+      label: Reason
+      options:
+        - Abandoned (no commits in 24 months)
+        - Archived
+        - Broken link / dead site
+        - Project superseded by another entry
+        - Other (explain below)
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: Additional detail
+      description: Link to the last commit, archive notice, or similar evidence.

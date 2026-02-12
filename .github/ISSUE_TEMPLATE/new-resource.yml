@@ -1,0 +1,73 @@
+name: Suggest a new resource
+description: Propose adding a Drupal 10.3+ resource to the list.
+title: "Add: <name of resource>"
+labels: ["new-resource"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Resource name
+      placeholder: e.g. Hookless Hooks
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Canonical URL
+      description: drupal.org project page, GitHub repo, or official site.
+      placeholder: https://www.drupal.org/project/example
+    validations:
+      required: true
+  - type: dropdown
+    id: section
+    attributes:
+      label: Section
+      description: Which section should this go in?
+      options:
+        - Core APIs and Subsystems
+        - Site Building Modules
+        - Editorial Experience
+        - Media
+        - Performance
+        - Search
+        - Decoupled and Headless
+        - Authentication and Authorization
+        - Commerce
+        - Migration
+        - Developer Tools
+        - Testing
+        - Static Analysis and Code Quality
+        - CI and CD
+        - Hosting
+        - Frontend and Theming
+        - Articles and Tutorials
+        - Podcasts
+        - Conferences and Events
+        - Communities
+        - Not sure — please advise
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: One-line description
+      description: Under 100 characters. Describe what the resource does, not why it is good.
+      placeholder: Adds X to Y for use case Z.
+    validations:
+      required: true
+  - type: checkboxes
+    id: criteria
+    attributes:
+      label: Inclusion criteria
+      options:
+        - label: Targets Drupal 10.3+ or 11
+          required: true
+        - label: Last commit / release / publication within 18 months
+          required: true
+        - label: Has a public canonical URL
+          required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does this belong here?
+      description: Two or three sentences on why this is high-signal.
