@@ -12,6 +12,16 @@ Focused on what's relevant today: Single Directory Components, Recipes, OOP hook
 - [Media](#media)
 - [Performance](#performance)
 - [Search](#search)
+- [Decoupled and Headless](#decoupled-and-headless)
+- [Authentication and Authorization](#authentication-and-authorization)
+- [Commerce](#commerce)
+- [Migration](#migration)
+- [Developer Tools](#developer-tools)
+- [Testing](#testing)
+- [Static Analysis and Code Quality](#static-analysis-and-code-quality)
+- [CI and CD](#ci-and-cd)
+- [Hosting](#hosting)
+- [Frontend and Theming](#frontend-and-theming)
 - [Contributing](#contributing)
 
 ## Core APIs and Subsystems
@@ -80,6 +90,94 @@ Anything that makes editors and content teams faster.
 - [Elasticsearch Connector](https://www.drupal.org/project/elasticsearch_connector) - Elasticsearch / OpenSearch backend.
 - [Facets](https://www.drupal.org/project/facets) - Faceted navigation for Search API.
 - [Search API Autocomplete](https://www.drupal.org/project/search_api_autocomplete) - Autocomplete suggestions for Search API.
+
+## Decoupled and Headless
+
+- [JSON:API](https://www.drupal.org/docs/core-modules-and-themes/core-modules/jsonapi-module) - Core JSON:API-compliant REST API.
+- [JSON:API Extras](https://www.drupal.org/project/jsonapi_extras) - Rename, hide, and reshape JSON:API resources.
+- [Decoupled Router](https://www.drupal.org/project/decoupled_router) - Resolve a Drupal path to its entity from a decoupled frontend.
+- [GraphQL Compose](https://www.drupal.org/project/graphql_compose) - Modern GraphQL schema generated from entity types.
+- [Next.js for Drupal](https://next-drupal.org/) - First-party Next.js framework for headless Drupal.
+- [Subrequests](https://www.drupal.org/project/subrequests) - Batch multiple internal requests in one HTTP round-trip.
+- [Consumers](https://www.drupal.org/project/consumers) - Track decoupled clients and their identity.
+
+## Authentication and Authorization
+
+- [Simple OAuth](https://www.drupal.org/project/simple_oauth) - OAuth2 + OpenID Connect provider, the standard for headless Drupal auth.
+- [OpenID Connect](https://www.drupal.org/project/openid_connect) - Login via Google, GitHub, Okta, Keycloak, and other OIDC providers.
+- [SAML SP](https://www.drupal.org/project/samlauth) - SAML Service Provider integration.
+- [Externalauth](https://www.drupal.org/project/externalauth) - Map external identities to Drupal accounts.
+- [Key](https://www.drupal.org/project/key) - Manage secrets and API keys outside config sync.
+
+## Commerce
+
+- [Drupal Commerce](https://www.drupal.org/project/commerce) - The flagship Drupal-native commerce platform.
+- [Commerce Stripe](https://www.drupal.org/project/commerce_stripe) - Stripe payment gateway.
+- [Commerce PayPal](https://www.drupal.org/project/commerce_paypal) - PayPal payment gateway.
+- [Commerce Shipping](https://www.drupal.org/project/commerce_shipping) - Shipping rates and methods.
+- [Commerce Recurring Framework](https://www.drupal.org/project/commerce_recurring) - Subscriptions and recurring billing.
+
+## Migration
+
+- [Migrate Plus](https://www.drupal.org/project/migrate_plus) - Extends core Migrate with extra sources, processes, and config entities.
+- [Migrate Tools](https://www.drupal.org/project/migrate_tools) - Drush commands for managing and running migrations.
+- [Migrate Source CSV](https://www.drupal.org/project/migrate_source_csv) - Migrate from CSV files.
+- [Migrate Source JSON](https://www.drupal.org/project/migrate_source_json) - Migrate from JSON via Migrate Plus.
+- [Feeds](https://www.drupal.org/project/feeds) - Recurring imports from external sources.
+- [Migrate Upgrade](https://www.drupal.org/project/migrate_upgrade) - Generate migrations from a Drupal 6/7 source.
+
+## Developer Tools
+
+- [Devel](https://www.drupal.org/project/devel) - Generators, kint dumps, helper routes.
+- [Webprofiler](https://www.drupal.org/docs/develop/development-tools/webprofiler) - Symfony web profiler integration; ships inside Devel.
+- [Drush](https://www.drush.org/) - The Drupal command-line shell.
+- [DDEV](https://ddev.com/) - The community standard for local Drupal development.
+- [Lando](https://lando.dev/) - Container-based local dev alternative.
+- [Composer](https://getcomposer.org/) - Dependency manager for PHP and Drupal projects.
+- [Twig Tweak](https://www.drupal.org/project/twig_tweak) - Useful Twig functions and filters for site builders.
+- [Maillog](https://www.drupal.org/project/maillog) - Capture outgoing mail in a Drupal log instead of sending.
+
+## Testing
+
+- [PHPUnit](https://phpunit.de/) - The PHP testing framework Drupal builds on.
+- [Drupal Test Traits](https://gitlab.com/weitzman/drupal-test-traits) - Run PHPUnit tests against an existing Drupal site.
+- [Behat Drupal Extension](https://github.com/jhedstrom/drupalextension) - Behat steps and contexts for Drupal.
+- [Nightwatch.js](https://www.drupal.org/docs/develop/automated-testing/javascript-functional-tests) - Core JavaScript end-to-end test runner.
+- [Playwright](https://playwright.dev/) - Modern cross-browser E2E framework many Drupal teams use today.
+- [Cypress](https://www.cypress.io/) - Component and E2E testing widely used with decoupled Drupal frontends.
+
+## Static Analysis and Code Quality
+
+- [PHPStan](https://phpstan.org/) - PHP static analyzer.
+- [phpstan-drupal](https://github.com/mglaman/phpstan-drupal) - PHPStan extension that understands Drupal's container, hooks, and APIs.
+- [phpstan-deprecation-rules](https://github.com/phpstan/phpstan-deprecation-rules) - Catch usage of deprecated APIs.
+- [Drupal Coder](https://www.drupal.org/project/coder) - PHPCS sniffs for Drupal and DrupalPractice standards.
+- [Drupal Rector](https://github.com/palantirnet/drupal-rector) - Automated deprecation rewriter for Drupal upgrades.
+- [GrumPHP](https://github.com/phpro/grumphp) - Composer-installed pre-commit framework.
+- [twigcs](https://github.com/friendsoftwig/twigcs) - Coding standard checker for Twig templates.
+
+## CI and CD
+
+- [Acquia Pipelines](https://docs.acquia.com/cloud-platform/develop/api/cloud-ide/) - Acquia-native CI for Acquia Cloud projects.
+- [Pantheon Build Tools](https://docs.pantheon.io/guides/build-tools) - Build/test/deploy automation for Pantheon sites.
+- [GitLab Templates for Drupal](https://project.pages.drupalcode.org/gitlab_templates/) - Official GitLab CI templates used on drupal.org itself.
+- [DDEV in CI](https://ddev.readthedocs.io/en/stable/users/usage/ci/) - Run the same DDEV environment locally and in CI.
+
+## Hosting
+
+- [Pantheon](https://pantheon.io/) - Drupal-specialized hosting with multidev environments.
+- [Acquia Cloud Platform](https://www.acquia.com/products/drupal-cloud) - Acquia's managed Drupal hosting.
+- [Platform.sh](https://platform.sh/) - Git-driven managed PaaS with strong Drupal support.
+- [Lagoon](https://lagoon.sh/) - amazee.io's open-source Drupal hosting platform.
+- [amazee.io](https://www.amazee.io/) - Managed Drupal hosting on Lagoon and Kubernetes.
+
+## Frontend and Theming
+
+- [Olivero](https://www.drupal.org/docs/core-modules-and-themes/core-themes/olivero-theme) - Core default front-end theme.
+- [Radix](https://www.drupal.org/project/radix) - Bootstrap-based base theme with a modern build pipeline.
+- [Storybook integration](https://www.drupal.org/project/storybook) - Storybook + Drupal SDC integration.
+- [Components](https://www.drupal.org/project/components) - Namespaced Twig templates outside `templates/`.
+- [Twig Field Value](https://www.drupal.org/project/twig_field_value) - Access raw field values in Twig.
 
 ## Contributing
 
