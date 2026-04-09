@@ -22,6 +22,10 @@ Focused on what's relevant today: Single Directory Components, Recipes, OOP hook
 - [CI and CD](#ci-and-cd)
 - [Hosting](#hosting)
 - [Frontend and Theming](#frontend-and-theming)
+- [Articles and Tutorials](#articles-and-tutorials)
+- [Podcasts](#podcasts)
+- [Conferences and Events](#conferences-and-events)
+- [Communities](#communities)
 - [Contributing](#contributing)
 
 ## Core APIs and Subsystems
@@ -178,6 +182,36 @@ Anything that makes editors and content teams faster.
 - [Storybook integration](https://www.drupal.org/project/storybook) - Storybook + Drupal SDC integration.
 - [Components](https://www.drupal.org/project/components) - Namespaced Twig templates outside `templates/`.
 - [Twig Field Value](https://www.drupal.org/project/twig_field_value) - Access raw field values in Twig.
+
+## Articles and Tutorials
+
+- [Lullabot Articles](https://www.lullabot.com/articles) - Long-form, technically deep Drupal writing.
+- [Drupalize.Me Blog](https://drupalize.me/blog) - Tutorials and architectural posts.
+- [Acquia Engineering Blog](https://www.acquia.com/blog) - Posts from Acquia's engineering and product teams.
+- [Drupal.org Documentation](https://www.drupal.org/documentation) - Authoritative core docs.
+- [OSTraining Drupal Tutorials](https://www.ostraining.com/blog/drupal/) - Practical Drupal tutorials.
+
+## Podcasts
+
+- [Talking Drupal](https://talkingdrupal.com/) - Weekly community podcast.
+- [Lullabot Podcast](https://www.lullabot.com/podcasts) - Drupal architecture and engineering conversations.
+- [DrupalEasy Podcast](https://www.drupaleasy.com/podcast) - Long-running Drupal podcast.
+
+## Conferences and Events
+
+- [DrupalCon](https://events.drupal.org/) - The annual flagship Drupal Association conference.
+- [BadCamp](https://badcamp.org/) - Bay Area Drupal Camp.
+- [MidCamp](https://www.midcamp.org/) - Midwest Drupal Camp (Chicago).
+- [Florida DrupalCamp](https://fldrupal.camp/) - Long-running US regional camp.
+- [Drupal Mountain Camp](https://drupalmountaincamp.ch/) - Swiss Drupal camp.
+- [DrupalSouth](https://drupalsouth.org/) - Annual Drupal conference for Australia and New Zealand.
+
+## Communities
+
+- [Drupal Slack](https://www.drupal.org/community/contributor-guide/reference-information/talk/slack) - The community chat, with channels for nearly every topic.
+- [Drupal Stack Exchange](https://drupal.stackexchange.com/) - Q&A site.
+- [/r/drupal](https://www.reddit.com/r/drupal/) - Reddit community.
+- [Drupal.org Forums](https://www.drupal.org/forum) - Official forums (still active for long-form discussion).
 
 ## Contributing
 
