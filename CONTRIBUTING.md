@@ -16,11 +16,13 @@ If you're not sure, open an issue first.
 ## How to add a resource
 
 1. Find the right section. If your resource doesn't fit any existing section, open an issue rather than inventing a new section in your PR.
-2. Insert your entry **alphabetically** within the section.
+2. Place your entry **by relevance** within the section — this list is curated in rough order of how central each resource is to a modern Drupal build, not alphabetically. Put broadly useful, foundational resources higher; niche ones lower.
 3. Use this exact format:
-   ```
+
+   ```text
    - [Name](URL) - One-line description ending in a period.
    ```
+
 4. Keep the description under 100 characters. Describe what the resource *does*, not why it is great.
 5. Open one PR per entry. Bulk PRs are hard to review.
 
@@ -39,12 +41,16 @@ If a project is dead (no commits in 24 months, abandoned, archived, broken site)
 
 Maintainers will check:
 
-- Alphabetical order within the section.
+- The entry is grouped by relevance within its section.
 - Description quality.
 - The link target is live and matches the description.
 - The resource passes inclusion criteria.
 
-A linter (`scripts/check-alphabetization.sh`) runs in CI to catch ordering mistakes.
+CI runs markdownlint and a dead-link check on every pull request.
+
+## Maintainer
+
+This list is maintained by [Mykola Podpriatov](https://github.com/mykolapodpriatov). For questions about a contribution, open an issue at [github.com/mykolapodpriatov/awesome-modern-drupal](https://github.com/mykolapodpriatov/awesome-modern-drupal/issues).
 
 ## Code of Conduct
 

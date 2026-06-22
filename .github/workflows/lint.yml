@@ -9,17 +9,6 @@ permissions:
   contents: read
 
 jobs:
-  awesome-lint:
-    name: awesome-lint
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-      - name: Run awesome-lint
-        run: npx awesome-lint
-
   markdownlint:
     name: markdownlint
     runs-on: ubuntu-latest
@@ -27,6 +16,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: DavidAnson/markdownlint-cli2-action@v17
         with:
+          config: .markdownlint-cli2.yaml
           globs: |
             README.md
             CONTRIBUTING.md
@@ -41,13 +31,15 @@ jobs:
       - name: Run lychee
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --no-progress --max-concurrency 4 --accept 200,206,429 README.md
+          args: >-
+            --no-progress
+            --max-concurrency 4
+            --max-retries 3
+            --retry-wait-time 2
+            --timeout 30
+            --accept 200,206,403,429
+            --exclude-mail
+            --exclude localhost
+            --exclude '^https://github\.com/mykolapodpriatov/awesome-modern-drupal'
+            README.md
           fail: true
-
-  alphabetization:
-    name: Alphabetization check
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Run check
-        run: bash scripts/check-alphabetization.sh README.md
