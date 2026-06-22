@@ -38,7 +38,6 @@ jobs:
             --retry-wait-time 2
             --timeout 30
             --accept 200,206,403,429
-            --exclude-mail
             --exclude localhost
             --exclude '^https://github\.com/mykolapodpriatov/awesome-modern-drupal'
             README.md
