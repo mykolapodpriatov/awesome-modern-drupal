@@ -1,0 +1,14 @@
+# markdownlint-cli2 configuration for an awesome list.
+# https://github.com/DavidAnson/markdownlint-cli2
+config:
+  # MD013 (line length): prose and long URLs make a hard wrap impractical.
+  MD013: false
+  # MD033 (inline HTML): required for the Awesome badge in the title.
+  MD033: false
+  # MD041 (first line must be a top-level heading): the title line carries the
+  # badge, which is fine for awesome lists.
+  MD041: false
+  # MD024 (no duplicate headings): allow repeated "Added"/"Changed"/"Removed"
+  # headings across Keep a Changelog releases; only forbid sibling dupes.
+  MD024:
+    siblings_only: true
