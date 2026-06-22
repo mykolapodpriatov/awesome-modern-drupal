@@ -1,5 +1,7 @@
 # Awesome Modern Drupal [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
+[![CI](https://github.com/mykolapodpriatov/awesome-modern-drupal/actions/workflows/lint.yml/badge.svg)](https://github.com/mykolapodpriatov/awesome-modern-drupal/actions/workflows/lint.yml)
+
 > A curated list of resources for modern Drupal 10.3+/11 development.
 
 Focused on what's relevant today: Single Directory Components, Recipes, OOP hooks, decoupled architectures, modern DevOps, and the contrib ecosystem that powers Drupal in 2026.
