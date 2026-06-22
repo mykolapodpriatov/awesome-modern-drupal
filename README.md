@@ -26,7 +26,6 @@ Focused on what's relevant today: Single Directory Components, Recipes, OOP hook
 - [Podcasts](#podcasts)
 - [Conferences and Events](#conferences-and-events)
 - [Communities](#communities)
-- [Contributing](#contributing)
 
 ## Core APIs and Subsystems
 
@@ -35,7 +34,7 @@ Core building blocks shipped with Drupal itself. These are the foundations every
 - [Single Directory Components](https://www.drupal.org/docs/develop/theming-drupal/using-single-directory-components) - Co-locate Twig, CSS, JS, and schema per component. Stable in core since 10.3.
 - [Recipes](https://www.drupal.org/docs/extending-drupal/drupal-recipes) - Apply curated configuration + dependencies to a site without becoming code dependencies.
 - [Project Browser](https://www.drupal.org/project/project_browser) - In-admin discovery and installation of contrib modules.
-- [Symfony Mailer](https://www.drupal.org/project/symfony_mailer) - Modern replacement for the legacy mail system, backed by symfony/mailer.
+- [Symfony Mailer](https://www.drupal.org/project/symfony_mailer) - Modern replacement for the legacy mail system, backed by Symfony Mailer.
 - [Hooks as Object Methods](https://www.drupal.org/node/3442349) - Implement hooks via `#[Hook]` attributes on service methods (Drupal 11.1+).
 - [BigPipe](https://www.drupal.org/docs/core-modules-and-themes/core-modules/bigpipe-module) - Stream the page shell and lazy-load slow placeholders. In core.
 - [Cache API](https://www.drupal.org/docs/drupal-apis/cache-api/cache-api) - Cache tags, contexts, and max-age — the spine of Drupal performance.
@@ -46,13 +45,13 @@ The contrib modules a typical 2026 build leans on.
 
 - [Layout Builder](https://www.drupal.org/docs/8/core/modules/layout-builder) - Core visual layout for content and entity types.
 - [Paragraphs](https://www.drupal.org/project/paragraphs) - Reusable structured content blocks.
-- [Group](https://www.drupal.org/project/group) - Group-based content, membership, and permissions.
+- [Group](https://www.drupal.org/project/group) - Content, membership, and permissions scoped to groups.
 - [ECA: Event - Condition - Action](https://www.drupal.org/project/eca) - Visual workflow/automation builder; modern successor to Rules.
 - [Workspaces](https://www.drupal.org/docs/core-modules-and-themes/core-modules/workspaces-module) - Content staging and previews in core.
 - [Webform](https://www.drupal.org/project/webform) - The de facto form builder for Drupal.
 - [Field Group](https://www.drupal.org/project/field_group) - Group fields in form and display layouts.
 - [Pathauto](https://www.drupal.org/project/pathauto) - Automatic URL alias generation.
-- [Token](https://www.drupal.org/project/token) - Token UI and additional tokens for use across modules.
+- [Token](https://www.drupal.org/project/token) - UI and additional placeholder values for use across modules.
 - [Redirect](https://www.drupal.org/project/redirect) - Manage URL redirects.
 - [Metatag](https://www.drupal.org/project/metatag) - SEO meta tags per entity.
 
@@ -83,7 +82,7 @@ Anything that makes editors and content teams faster.
 - [Purge](https://www.drupal.org/project/purge) - Coordinated cache invalidation framework for external caches.
 - [Varnish Purger](https://www.drupal.org/project/varnish_purge) - Purge integration for Varnish.
 - [Memcache](https://www.drupal.org/project/memcache) - Memcached cache backend.
-- [Redis](https://www.drupal.org/project/redis) - Redis cache backend (and lock, flood, queue backends).
+- [Redis](https://www.drupal.org/project/redis) - Cache backend (and lock, flood, queue backends) backed by Redis.
 - [Advanced CSS/JS Aggregation](https://www.drupal.org/project/advagg) - Granular aggregation tuning beyond core defaults.
 - [HTTP Cache Control](https://www.drupal.org/project/http_cache_control) - Tune Cache-Control headers per response.
 
@@ -162,17 +161,17 @@ Anything that makes editors and content teams faster.
 
 ## CI and CD
 
-- [Acquia Pipelines](https://docs.acquia.com/cloud-platform/develop/api/cloud-ide/) - Acquia-native CI for Acquia Cloud projects.
+- [Acquia Pipelines](https://docs.acquia.com/acquia-cloud-platform/pipelines) - Acquia-native CI/CD for Acquia Cloud projects.
 - [Pantheon Build Tools](https://docs.pantheon.io/guides/build-tools) - Build/test/deploy automation for Pantheon sites.
 - [GitLab Templates for Drupal](https://project.pages.drupalcode.org/gitlab_templates/) - Official GitLab CI templates used on drupal.org itself.
-- [DDEV in CI](https://ddev.readthedocs.io/en/stable/users/usage/ci/) - Run the same DDEV environment locally and in CI.
+- [DDEV in CI](https://docs.ddev.com/en/stable/users/topics/remote-docker/) - Run the same DDEV environment locally and in CI.
 
 ## Hosting
 
 - [Pantheon](https://pantheon.io/) - Drupal-specialized hosting with multidev environments.
 - [Acquia Cloud Platform](https://www.acquia.com/products/drupal-cloud) - Acquia's managed Drupal hosting.
 - [Platform.sh](https://platform.sh/) - Git-driven managed PaaS with strong Drupal support.
-- [Lagoon](https://lagoon.sh/) - amazee.io's open-source Drupal hosting platform.
+- [Lagoon](https://lagoon.sh/) - Open-source Drupal hosting platform from amazee.io.
 - [amazee.io](https://www.amazee.io/) - Managed Drupal hosting on Lagoon and Kubernetes.
 
 ## Frontend and Theming
@@ -217,6 +216,6 @@ Anything that makes editors and content teams faster.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md). PRs welcome — please follow the inclusion criteria there.
 
-## License
+Maintained by [Mykola Podpriatov](https://github.com/mykolapodpriatov) at [github.com/mykolapodpriatov/awesome-modern-drupal](https://github.com/mykolapodpriatov/awesome-modern-drupal).
 
-[CC0](LICENSE) — to the extent possible under law, the maintainers have waived all copyright and related rights to this work.
+To the extent possible under law, the maintainers have waived all copyright and related rights to this work under [CC0](LICENSE).
