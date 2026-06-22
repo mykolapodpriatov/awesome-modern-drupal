@@ -6,7 +6,7 @@
 
 ## Checklist
 
-- [ ] Inserted in the correct section, alphabetically
+- [ ] Inserted in the correct section, grouped by relevance
 - [ ] Targets Drupal 10.3+ or Drupal 11
 - [ ] Actively maintained (last activity within 18 months)
 - [ ] Description under 100 characters, ends with a period
