@@ -38,6 +38,7 @@ jobs:
             --retry-wait-time 2
             --timeout 30
             --accept 200,206,403,429
+            --user-agent 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
             --exclude localhost
             --exclude '^https://github\.com/mykolapodpriatov/awesome-modern-drupal'
             README.md
