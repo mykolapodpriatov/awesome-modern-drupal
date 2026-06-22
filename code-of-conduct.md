@@ -44,8 +44,11 @@ an individual is officially representing the community in public spaces.
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported to the maintainers through the repository's issue tracker or by direct
-contact. All complaints will be reviewed and investigated promptly and fairly.
+reported to the project maintainer, Mykola Podpriatov
+(<https://github.com/mykolapodpriatov>), through a confidential GitHub message
+or by opening an issue at
+<https://github.com/mykolapodpriatov/awesome-modern-drupal/issues>. All
+complaints will be reviewed and investigated promptly and fairly.
 
 ## Attribution
 
