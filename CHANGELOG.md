@@ -22,6 +22,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- An `AI and Automation` section covering the Drupal AI ecosystem (AI core, AI
+  Agents, OpenAI/Anthropic providers, AI Search, a vector-database provider, and
+  ECA).
+- `scripts/lint-entries.sh` and an `entry-lint` CI job that enforce the entry
+  format and keep the Contents list in sync with the section headings.
 - `.markdownlint-cli2.yaml` so markdownlint passes on awesome-list formatting.
 - A maintainer/contact line in `CONTRIBUTING.md` and `code-of-conduct.md`.
 
