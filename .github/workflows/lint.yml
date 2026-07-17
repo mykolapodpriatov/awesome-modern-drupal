@@ -23,6 +23,14 @@ jobs:
             CHANGELOG.md
             code-of-conduct.md
 
+  entry-lint:
+    name: entry-lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate entry format and Contents sync
+        run: bash scripts/lint-entries.sh
+
   dead-links:
     name: Check for dead links
     runs-on: ubuntu-latest

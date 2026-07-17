@@ -46,7 +46,18 @@ Maintainers will check:
 - The link target is live and matches the description.
 - The resource passes inclusion criteria.
 
-CI runs markdownlint and a dead-link check on every pull request.
+CI runs markdownlint, an entry-format check, and a dead-link check on every
+pull request.
+
+`scripts/lint-entries.sh` enforces the entry rules automatically: it flags any
+entry that does not match `- [Name](URL) - Description.`, whose description does
+not end in a period, runs to 100 characters or more, or contains an emoji, and
+it verifies that every `##` section heading has a matching anchor in the
+Contents list (and vice versa). Run it locally before opening a PR:
+
+```sh
+bash scripts/lint-entries.sh
+```
 
 ## Maintainer
 
