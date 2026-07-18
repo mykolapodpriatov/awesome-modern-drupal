@@ -17,6 +17,7 @@ Focused on what's relevant today: Single Directory Components, Recipes, OOP hook
 - [AI and Automation](#ai-and-automation)
 - [Decoupled and Headless](#decoupled-and-headless)
 - [Authentication and Authorization](#authentication-and-authorization)
+- [Security](#security)
 - [Commerce](#commerce)
 - [Migration](#migration)
 - [Developer Tools](#developer-tools)
@@ -126,6 +127,17 @@ The Drupal AI ecosystem that matured in 2025-2026: a provider-agnostic core, age
 - [SAML SP](https://www.drupal.org/project/samlauth) - SAML Service Provider integration.
 - [Externalauth](https://www.drupal.org/project/externalauth) - Map external identities to Drupal accounts.
 - [Key](https://www.drupal.org/project/key) - Manage secrets and API keys outside config sync.
+
+## Security
+
+- [Security Kit](https://www.drupal.org/project/seckit) - Hardens sites against XSS, clickjacking, CSRF, and other risks via HTTP headers.
+- [TFA](https://www.drupal.org/project/tfa) - Adds a second authentication factor such as TOTP to Drupal logins.
+- [Password Policy](https://www.drupal.org/project/password_policy) - Enforce configurable password strength and expiration rules.
+- [Honeypot](https://www.drupal.org/project/honeypot) - Anti-spam for forms using honeypot and timestamp methods, no CAPTCHA needed.
+- [CAPTCHA](https://www.drupal.org/project/captcha) - Challenge-response test on forms to block automated submissions.
+- [Antibot](https://www.drupal.org/project/antibot) - Block form spam with JavaScript, requiring no interaction from real users.
+- [Automated Logout](https://www.drupal.org/project/autologout) - Log inactive users out after a configurable session timeout.
+- [Security Review](https://www.drupal.org/project/security_review) - Automated checklist that audits a site for common security misconfigurations.
 
 ## Commerce
 
