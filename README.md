@@ -14,6 +14,7 @@ Focused on what's relevant today: Single Directory Components, Recipes, OOP hook
 - [Media](#media)
 - [Performance](#performance)
 - [Search](#search)
+- [AI and Automation](#ai-and-automation)
 - [Decoupled and Headless](#decoupled-and-headless)
 - [Authentication and Authorization](#authentication-and-authorization)
 - [Commerce](#commerce)
@@ -95,6 +96,18 @@ Anything that makes editors and content teams faster.
 - [Elasticsearch Connector](https://www.drupal.org/project/elasticsearch_connector) - Elasticsearch / OpenSearch backend.
 - [Facets](https://www.drupal.org/project/facets) - Faceted navigation for Search API.
 - [Search API Autocomplete](https://www.drupal.org/project/search_api_autocomplete) - Autocomplete suggestions for Search API.
+
+## AI and Automation
+
+The Drupal AI ecosystem that matured in 2025-2026: a provider-agnostic core, agents, and vector search.
+
+- [AI (Artificial Intelligence)](https://www.drupal.org/project/ai) - Provider-agnostic framework for adding LLM features to Drupal.
+- [AI Agents](https://www.drupal.org/project/ai_agents) - Build tool-using agents that act on Drupal content and configuration.
+- [OpenAI Provider](https://www.drupal.org/project/ai_provider_openai) - Connect the AI module to OpenAI GPT, embedding, and image models.
+- [Anthropic Provider](https://www.drupal.org/project/ai_provider_anthropic) - Connect the AI module to Anthropic Claude models.
+- [AI Search](https://www.drupal.org/project/ai_search) - RAG and semantic search that indexes content as vector embeddings.
+- [Milvus VDB Provider](https://www.drupal.org/project/ai_vdb_provider_milvus) - Milvus vector database backend for AI Search.
+- [ECA: Event - Condition - Action](https://www.drupal.org/project/eca) - No-code automation that can orchestrate AI actions on events and conditions.
 
 ## Decoupled and Headless
 
