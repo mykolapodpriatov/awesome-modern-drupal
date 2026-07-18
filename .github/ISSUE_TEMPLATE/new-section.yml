@@ -1,0 +1,53 @@
+name: Propose a new section
+description: Propose adding a new top-level section to the list.
+title: "New section: <proposed name>"
+labels: ["new-section"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Sections are curated, not exhaustive. Before proposing one, check that
+        the resources you have in mind don't already fit an existing section.
+  - type: input
+    id: section-name
+    attributes:
+      label: Proposed section name
+      description: The heading exactly as it would appear (e.g. "Security").
+      placeholder: e.g. Security
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: Why does this deserve its own section rather than fitting an existing one?
+    validations:
+      required: true
+  - type: textarea
+    id: candidates
+    attributes:
+      label: Candidate entries
+      description: 3-5 resources for this section, one per line, as `- [Name](URL) - Description.`
+      placeholder: |
+        - [Security Kit](https://www.drupal.org/project/seckit) - Hardens sites via HTTP security headers.
+        - [TFA](https://www.drupal.org/project/tfa) - Adds a second authentication factor to logins.
+        - [Password Policy](https://www.drupal.org/project/password_policy) - Enforce password strength rules.
+    validations:
+      required: true
+  - type: input
+    id: placement
+    attributes:
+      label: Placement in Contents
+      description: Which existing section should this come after in the Contents order?
+      placeholder: e.g. after "Authentication and Authorization"
+    validations:
+      required: true
+  - type: checkboxes
+    id: criteria
+    attributes:
+      label: Checklist
+      options:
+        - label: This topic is not already covered by an existing section heading
+          required: true
+        - label: I can supply at least 3 entries that meet the inclusion criteria
+          required: true

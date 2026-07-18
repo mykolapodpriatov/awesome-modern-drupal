@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Drupal Slack
+    url: https://www.drupal.org/community/contributor-guide/reference-information/talk/slack
+    about: Chat with the Drupal community in real time.
+  - name: Drupal.org
+    url: https://www.drupal.org/
+    about: Official Drupal site, documentation, and project issue queues.
