@@ -37,6 +37,7 @@ Core building blocks shipped with Drupal itself. These are the foundations every
 
 - [Single Directory Components](https://www.drupal.org/docs/develop/theming-drupal/using-single-directory-components) - Co-locate Twig, CSS, JS, and schema per component. Stable in core since 10.3.
 - [Recipes](https://www.drupal.org/docs/extending-drupal/drupal-recipes) - Apply curated configuration + dependencies to a site without becoming code dependencies.
+- [Drupal CMS](https://www.drupal.org/project/cms) - Recipes-based product for marketers and site builders, now at 2.0.
 - [Project Browser](https://www.drupal.org/project/project_browser) - In-admin discovery and installation of contrib modules.
 - [Symfony Mailer](https://www.drupal.org/project/symfony_mailer) - Modern replacement for the legacy mail system, backed by Symfony Mailer.
 - [Hooks as Object Methods](https://www.drupal.org/node/3442349) - Implement hooks via `#[Hook]` attributes on service methods (Drupal 11.1+).
@@ -47,6 +48,7 @@ Core building blocks shipped with Drupal itself. These are the foundations every
 
 The contrib modules a typical 2026 build leans on.
 
+- [Drupal Canvas](https://www.drupal.org/project/canvas) - Visual page builder; default for new installs, superseding Layout Builder.
 - [Layout Builder](https://www.drupal.org/docs/8/core/modules/layout-builder) - Core visual layout for content and entity types.
 - [Paragraphs](https://www.drupal.org/project/paragraphs) - Reusable structured content blocks.
 - [Group](https://www.drupal.org/project/group) - Content, membership, and permissions scoped to groups.
